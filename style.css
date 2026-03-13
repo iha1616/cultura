@@ -1,3 +1,91 @@
-*{
-    
- }
+/* Selector universal: aplica estilos a TODOS los elementos de la página */
+* { 
+    margin: 0; /* Elimina los márgenes externos predeterminados de todos los elementos */
+    padding: 0; /* Elimina los espacios internos predeterminados de todos los elementos */
+    box-sizing: border-box; /* Hace que el ancho y alto incluyan padding y borde para evitar desbordamientos */
+}
+
+/* Estilos generales del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Define la fuente principal del texto de la página */
+    background: linear-gradient(135deg, #1f3c88, #30b857); /* Aplica un fondo degradado en diagonal con dos colores */
+    color: #333; /* Define el color del texto general (gris oscuro) */
+    padding: 20px; /* Agrega un espacio interno alrededor de todo el contenido de la página */
+}
+
+/* Estilos del encabezado principal */
+header {
+    text-align: center; /* Centra horizontalmente el contenido del encabezado */
+    color: rgb(93, 219, 126); /* Define el color del texto del encabezado */
+    margin-bottom: 30px; /* Agrega espacio debajo del encabezado separándolo del contenido siguiente */
+}
+
+/* Estilos del título principal dentro del encabezado */
+header h1 {
+    font-size: 2.5em; /* Aumenta el tamaño del título principal */
+}
+
+/* Estilos del subtítulo o párrafo dentro del encabezado */
+header p {
+    font-size: 1.2em; /* Define un tamaño ligeramente más grande para el texto del párrafo */
+}
+
+/* Estilos compartidos para tarjetas (.card) y tablas (.tabla) */
+.card, .tabla {
+    background: white; /* Establece fondo blanco para resaltar el contenido */
+    padding: 20px; /* Espacio interno dentro del contenedor */
+    margin-bottom: 20px; /* Espacio inferior entre tarjetas o tablas */
+    border-radius: 10px; /* Bordes redondeados para un diseño moderno */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Sombra para crear efecto de elevación */
+}
+
+/* Estilos generales para todas las tablas */
+table {
+    width: 100%; /* Hace que la tabla ocupe todo el ancho disponible */
+    border-collapse: collapse; /* Une los bordes de las celdas para evitar doble borde */
+    margin-top: 10px; /* Espacio superior entre la tabla y el elemento anterior */
+}
+
+/* Estilos para celdas de encabezado (th) y celdas de datos (td) */
+th, td {
+    border: 1px solid #ddd; /* Agrega borde gris claro a cada celda */
+    padding: 10px; /* Espacio interno dentro de cada celda */
+    text-align: center; /* Centra el contenido dentro de la celda */
+}
+
+/* Estilo específico para los encabezados de la tabla */
+th {
+    background-color: #d37e38; /* Fondo azul oscuro para destacar los encabezados */
+    color: white; /* Texto blanco para mejor contraste */
+}
+
+/* Contenedor que organiza los botones */
+.boton-container {
+    text-align: center; /* Centra los botones dentro del contenedor */
+    margin: 20px 0; /* Agrega espacio arriba y abajo del contenedor */
+}
+
+/* Estilo general de los botones */
+button {
+    background-color: #c4bab0; /* Color de fondo naranja para el botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Elimina el borde predeterminado del botón */
+    padding: 12px 25px; /* Espacio interno vertical y horizontal del botón */
+    border-radius: 10px; /* Bordes redondeados del botón */
+    font-size: 1em; /* Tamaño del texto del botón */
+    cursor: pointer; /* Cambia el cursor a una mano cuando pasa sobre el botón */
+    transition: 0.3s; /* Aplica una transición suave para efectos visuales */
+}
+
+/* Efecto cuando el usuario pasa el mouse sobre el botón */
+button:hover {
+    background-color: #e36414; /* Cambia el color del botón cuando se pasa el mouse */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón para efecto interactivo */
+}
+
+/* Estilos del pie de página */
+footer {
+    text-align: center; /* Centra el contenido del pie de página */
+    margin-top: 30px; /* Agrega espacio superior separándolo del contenido */
+    color: rgb(173, 215, 59); /* Define el color del texto del pie de página */
+}
